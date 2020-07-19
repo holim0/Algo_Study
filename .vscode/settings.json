@@ -2,6 +2,7 @@
     "files.associations": {
         "vector": "cpp",
         "ostream": "cpp",
-        "queue": "cpp"
+        "queue": "cpp",
+        "utility": "cpp"
     }
 }
