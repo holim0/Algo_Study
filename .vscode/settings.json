@@ -4,6 +4,7 @@
         "ostream": "cpp",
         "queue": "cpp",
         "utility": "cpp",
-        "string": "cpp"
+        "string": "cpp",
+        "ratio": "cpp"
     }
 }
