@@ -20,7 +20,7 @@ bool mst[8]={false, };
 int islandcnt=0;
 int answer=0;
 vector<pair<int, int>> island[8];    // 섬 좌표들 저장.
-vector<pair<int, pair<int, int>>> connect;
+vector<pair<int, pair<int, int>>> connect;    //비용 연결.
 
 bool range(int x, int y){
     
