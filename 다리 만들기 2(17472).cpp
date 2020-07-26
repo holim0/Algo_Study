@@ -166,7 +166,6 @@ bool checkallTrue(){
     
 }
 
-
 void sol(){
 
     mst[1]=true;
@@ -188,8 +187,6 @@ void sol(){
             }
         }
     }
-
-
 }
 
 bool checkNetwork(){      /// 연결이 잘 돼 있는지 파악하기 위해서 bfs 한 번 더 사용.
@@ -224,8 +221,6 @@ bool checkNetwork(){      /// 연결이 잘 돼 있는지 파악하기 위해서
     }
     
     return true;
-
-
 }
 
 
