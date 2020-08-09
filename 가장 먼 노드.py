@@ -40,5 +40,5 @@ def solution(n, edge):
         if maxval==val:
             answer+=1
     
-       
+
     return answer
