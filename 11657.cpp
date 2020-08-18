@@ -6,7 +6,7 @@ const int INF = 2e9;
 
 using namespace std;
 int N, M;
-int dist[501];
+long long dist[501];
 bool cycle=false;
 vector<pair<int, int>> map[501];
 
@@ -36,9 +36,9 @@ void get(){
     else{
         for (int i = 2; i <=N; i++)
         {
-            if(dist[i]==INF) cout<<-1<<endl;
+            if(dist[i]==INF) printf("%d\n", -1);
             else{
-                cout<<dist[i]<<endl;
+                printf("%d\n", dist[i]);
             }
         }
         
@@ -49,10 +49,15 @@ void get(){
 
 int main(){
 
+    ios::sync_with_stdio(false);
+    cin.tie(NULL);
+    cout.tie(NULL);
+
+
     cin>>N>>M;
 
     
-    for (int i = 0; i < N; i++)
+    for (int i = 1; i <=N; i++)
     {
         dist[i]=INF;
     }
