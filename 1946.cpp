@@ -38,8 +38,7 @@ int main(){
             else{
                 tmp.push_back(v[i].second);
             }
-        }
-        
+        } 
         cout<<tmp.size()<<endl;
         
     }
