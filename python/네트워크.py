@@ -1,24 +1,26 @@
-from queue import Queue
+from collections import deque
 
 
 def solution(n, computers):
-
-    check = [False for _ in range(n)]
     answer = 0
-    q = Queue()
 
-    for i in range(n):
-        for j in range(n):
-            if computers[i][j] == 1 and check[j] == False:
-                answer += 1
-                q.put(j)
-                check[j] = True
-                while q.empty() != True:
-                    cur = q.get()
-                    for k in range(n):
-                        if computers[cur][k] == 1 and check[k] == False:
-                            print(k)
-                            check[k] = True
-                            q.put(k)
+    size = len(computers)
+
+    check = [False for _ in range(size)]
+    q = deque([])
+
+    for i in range(size):
+        if not check[i]:
+            check[i] = True
+            answer += 1
+            q.append(i)
+
+            while q:
+                cur = q.popleft()
+
+                for j in range(size):
+                    if computers[cur][j] == 1 and not check[j]:
+                        check[j] = True
+                        q.append(j)
 
     return answer
