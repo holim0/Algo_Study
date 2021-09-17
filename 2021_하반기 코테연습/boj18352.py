@@ -37,7 +37,6 @@ while q:
 
 
 answer = []
-
 for i in range(1, n+1):
     if dist[i] == k:
         answer.append(i)
