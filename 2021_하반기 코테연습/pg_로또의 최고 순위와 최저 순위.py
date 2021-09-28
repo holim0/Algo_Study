@@ -29,5 +29,5 @@ def solution(lottos, win_nums):
     
     answer = [reward(max_win_cnt),reward(same_cnt)]
     
-    
+
     return answer
