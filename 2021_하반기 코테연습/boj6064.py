@@ -5,41 +5,34 @@ input = sys.stdin.readline
 
 T = int(input())
 
+def gcd(a, b):
+    while b > 0:
+        a, b = b, a % b
+    return a
+
+def lcm(a, b):
+    return a * b // gcd(a, b)
+
+
 while T:
 
     M, N, x, y = map(int, input().split())
 
-    
-    answer = -1
-    sx, sy = 1, 1
-    day = 1
-    while True:
-
+    l = lcm(M, N)
+    flag = False
+    for i in range(x, l+1, M):
+        tmp = -1
+        if i%N==0:
+            tmp = N
+        else:
+            tmp =i%N
         
-        if sx<M:
-            sx+=1
-
-        else:
-            sx=1
-
-        if sy<N:
-            sy+=1
-        else:
-            sy=1
-
-        if sx==x and sy==y:
-            answer = day+1
+        if tmp==y:
+            print(i)
+            flag= True
             break
-
-        if sx==M and sy==N:
-            break
-
-        day+=1
-
-    print(answer)
-
-
-
-
-
+        
+       
+    if not flag:
+        print(-1)
     T-=1
