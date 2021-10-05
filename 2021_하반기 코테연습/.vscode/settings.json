@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "*.vue": "vue",
+        "utility": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "Disabled"
+}
