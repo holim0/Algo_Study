@@ -33,8 +33,3 @@ while 1:
 start, end = 0, len(number)-1
 postOrder(start, end)
 
-
-
-
-
-
