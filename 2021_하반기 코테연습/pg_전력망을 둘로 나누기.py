@@ -60,8 +60,5 @@ def solution(n, wires):
         getSol(f, to, link)
         link[f][to], link[to][f]=1, 1
     
-    
-    
 
-    
     return answer
