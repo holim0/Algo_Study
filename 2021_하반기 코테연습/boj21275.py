@@ -53,7 +53,6 @@ for pa in possible_a:
         if aSum==bSum and ai!=bi:
             answer.append((aSum, ai, bi))
 
-print(possible_a, "\n", possible_b)
 
 if len(answer)==0:
     print("Impossible")
