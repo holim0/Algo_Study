@@ -42,7 +42,6 @@ while q:
         if degree[nxt]==0:
             q.append((nxt, need_time[nxt]))
 
-print(dp)
 for d in dp:
     answer = max(answer, d)
     
