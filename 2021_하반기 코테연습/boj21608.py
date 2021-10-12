@@ -101,7 +101,7 @@ def calLike():
 for curstudent in student:
 
     space = rule1(curstudent)
-    # print(space)
+    
     if len(space)>1:
         space = rule2(curstudent, space)
         
@@ -113,11 +113,7 @@ for curstudent in student:
         x, y = space[0]
         mapp[x][y] = curstudent
     
-    # print("\n")
-    # for i in range(n):
-    #     for j in range(n):
-    #         print(mapp[i][j], end=" ")
-    #     print(end="\n")
+    
 
 print(calLike())
     
