@@ -38,10 +38,4 @@ for s in string:
 
 
 
-
-
-
-
-
-
 print(time)
