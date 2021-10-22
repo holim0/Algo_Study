@@ -18,11 +18,6 @@ def find(cur, cnt):
             check[i] = False
     
 
-
-
-
-
-
 while c:
 
 
